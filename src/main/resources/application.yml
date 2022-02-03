@@ -1,0 +1,17 @@
+azure:
+  keyvault:
+    uri: ${KEY_VAULT_URI}
+  cosmos:
+    uri: ${COSMOS_URL}
+    key: ${COSMOS_KEY}
+    database: ${COSMOSDB_NAME}
+    populate-query-metrics: true
+
+server:
+  ssl:
+    key-alias: ${SERVER_SSL_CERTIFICATE_NAME}
+    key-store-type: AzureKeyVault
+
+spring:
+  application:
+    name: internal-service
